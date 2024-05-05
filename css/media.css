@@ -1,0 +1,72 @@
+@media (max-with:1100px) {
+    .hero {
+        height: auto;
+    }
+
+    .hero__content {
+        flex-wrap: wrap;
+    }
+
+    .hero__desc {
+        margin: 0 auto;
+    }
+
+    .hero__umg-wrap {
+        width: 569px;
+        height: 593px;
+    }
+
+    .hero__img {
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        /*Ширина по макету 708px + 40px padding, которому мы задавали ране*/
+        max-width: 748px;
+    }
+
+    /* Блок в котором находятся картинка и описание (секция about)*/
+    .about__content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .slider__list {
+        gap: 30px 40px;
+    }
+}
+
+@media (max-width: 475px) {
+    .container {
+        max-width: 310px;
+        padding: 0px 5px;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .friends__slider {
+        padding-left: 0px;
+        padding-right: 0px;
+        position: relative;
+    }
+
+    .slider__list {}
+
+    .slider__controls {
+        position: static;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .slider__control {
+        position: static;
+        display: block;
+        transform: translateY(0);
+    }
+
+    .slider__item {}
+}
